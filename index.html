@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Test</title>
+    <!--css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--css file-->
 </head>
 <body>
-    <h1>Ciao</h1>
-    <label for="input-text">Inserisci testo</label>
-    <input id ="input-text" type="text">
+    <!--contenitore di applicazione vuejs enunciato con interpolazione-->
+    <div id="app">
+    <h1 class="red" :class="className">ciao</h1>
+    <h3>Evento</h3>
+    <button v-on:click="sayHelloViaConsole">
+        clicca qui per salutare via console
+    </button>
+    </div>
+    <!--contenitore di applicazione vuejs enunciato con interpolazione-->
+    
+    <!--add file vuejs sempre sopra file js-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--/add file vuejs sempre sopra file js-->
     <!--add file js-->
     <script src="js/myscript.js"></script>
     <!--/add file js-->
+    
 </body>
 </html>
